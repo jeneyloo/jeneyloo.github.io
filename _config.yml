@@ -23,7 +23,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: ''}
+    # - {title: Projects, description: My Projects, url: ''}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
