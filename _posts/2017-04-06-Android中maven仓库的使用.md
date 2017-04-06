@@ -67,6 +67,6 @@ tags: Android
 	```
 3. 在library module目录下直接执行命令`gradle uploadArchives`，或者AS界面点击library module的Tasks中的uploadArchives.执行成功，build成功aar包就可以上传到maven仓库了。
 
-	![image](../assets/images/uploadArchives.png)
+	![image](/assets/images/uploadArchives.png)
 	
 > 	建议开发的library按照github上的library开源项目的结构一样，包涵library以及sample代码，方便调试与发布。
