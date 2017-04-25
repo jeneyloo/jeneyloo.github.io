@@ -24,6 +24,13 @@ tags: Android
 
 2. 和使用开源库一样，在module的`build.gradle`中通过`compile('GROUP_ID:ARTIFACT_ID:VERSION')`的配置获取library
 
+	```
+	//使用SNAPSHOT仓库时，因为调试期间的版本号不变，会出现无法更新到最新aar的问题，解决方法在module的build.gradle中配置以下
+	configurations.all {
+   		resolutionStrategy { cacheChangingModulesFor 0, 'seconds' }
+   }
+	```
+
 ### 如何上传library至Amaven仓库
 1. 编写上传library的脚本，为了使用方便，脚本写在单独的gradle文件中
 	
