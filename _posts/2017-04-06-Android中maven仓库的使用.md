@@ -26,6 +26,7 @@ tags: Android
 
 	```
 	//使用SNAPSHOT仓库时，因为调试期间的版本号不变，会出现无法更新到最新aar的问题，解决方法在module的build.gradle中配置以下
+	compile('GROUP_ID:ARTIFACT_ID:VERSION'){ changing = true }
 	configurations.all {
    		resolutionStrategy { cacheChangingModulesFor 0, 'seconds' }
    }
